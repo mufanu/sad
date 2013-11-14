@@ -1,0 +1,16 @@
+<?php
+$form = $this->form;
+//$form->setAttribute('action', $this->url('project', array('action' => 'add')));
+$form->prepare();
+echo $this->form()->openTag($this->form);
+echo $this->formRow($this->form->get('reg_number'));
+echo $this->formRow($this->form->get('in_date'));
+
+echo $this->formRow($this->form->get('pages_number'));
+echo $this->formRow($this->form->get('type'));
+//echo $this->formRow($this->form->get('avatar'));
+//$fileElement = $form->get('image-file');
+//echo $this->formLabel($fileElement);
+//echo $this->formFile($fileElement);
+echo $this->formRow($this->form->get('submit'));
+echo $this->form()->closeTag();
